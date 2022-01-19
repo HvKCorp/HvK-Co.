@@ -2,7 +2,7 @@
 - 👀 I’m interested in coding,script writing, gaming, reading
 - 🌱 I’m currently studying in 10th grade.
 - 💞️ I’m looking to collaborate with rockstar games
-- 📫 To reach me go to my discord server I'll provide the link soon
+- 📫 To reach me go to my [discord server](https://discord.gg/FSMTeH3hse)
 
 <!---
 OPcaliverYT/OPcaliverYT is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
