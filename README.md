@@ -2,7 +2,7 @@ Hey fellas I'm LuCk exxtreme. A Grand Theft Auto lover, A Mobile gamer played: G
 
 My projects: 
 
-[My discord bot](https://dsc.gg/livin-in-thug)
+[![My discord bot](https://imgur.com/a/EeGuSsC)](https://dsc.gg/livin-in-thug)
  
 [My bot docs](https://docs.luckexxtreme.ml)
 
