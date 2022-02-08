@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Battery Indicator</title>
-  <link href="style.css" rel="stylesheet">
+Hi, I'm LuCk exxtreme
 </head>
 <body>
-Hi I'm LuCk exxtreme
- <div class="battery-outer">
-              <div class="battery-level"></div>
-    </div>
+<!-- The battery is not charging and the current level is 94% -->
+<span id="batteryStatus"></span>
+
+<script>
+  if ('getBattery' in navigator) {
+    navigator.getBattery().then((battery) => {
+      const { level, charging } = battery;
+      const status = charging ? 'charging' : 'not charging';
+      const percent = `${Math.round(level * 100)}%`;
+      const message = `The battery is ${status} and the current level is ${percent}`;
+      document.getElementById('batteryStatus').textContent = message;
+    });
+  }
+</script>
 </body>
-<script src="battery.js"></script>
 </html>
