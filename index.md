@@ -14,13 +14,17 @@
       document.getElementById("batteryStatus").textContent = message;
     });
   }
+
+
 </script>
+
+# Your IP:
 
 <html><head>
     <meta charset="utf-8">
     <title>Network IP Address via ipcalf.com</title>
 </head><body>
-Your network IP is: <h1 id=list>-</h1> Make the locals proud.
+Your network IP is: <h1 id=list>-</h1>.
 
 
 
