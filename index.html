@@ -7,7 +7,7 @@
       const { level, charging } = battery;
       const status = charging ? "charging" : "not charging";
       const percent = `${Math.round(level * 100)}%`;
-      const message = `***Your battery is ${status}, current level:*** 
+      const message = `Your battery is ${status}, current level: 
 
 [${percent}]•`;
       document.getElementById("batteryStatus").textContent = message;
