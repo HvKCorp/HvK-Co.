@@ -1,4 +1,3 @@
-<!DOCTYPE HTML>
 <!-- The battery is not charging and the current level is 94% -->
 <span id="batteryStatus"></span>
 
