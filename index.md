@@ -256,4 +256,6 @@ LuCk exxtreme#7525
 
 
 ### Date:
-<script>document.write(new Date().getFullYear())</script>
+<script>
+document.getElementById("date").innerHTML = Date();
+</script> / <script>document.write(new Date().getFullYear())</script>
