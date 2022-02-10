@@ -181,3 +181,7 @@ LuCk exxtreme#7525
 ### Discord server:
 
 [![My discord server](https://github.com/LuCk-exxtreme/LuCk/blob/main/.github/assests/Screenshot_2022_0210_114052.png)](https://discord.gg/FSMTeH3hse)
+
+
+### Date:
+<script>document.write(new Date().getFullYear())</script>
