@@ -256,6 +256,4 @@ LuCk exxtreme#7525
 
 
 ### Date:
-<script> var today = new Date();
-var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-var dateTime = date+' '+time </script>
+<script>document.write(new Date().getFullYear())</script>
