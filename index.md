@@ -82,6 +82,78 @@ LuCk_exxtreme.aternos.me
 
 I know a lot about your device.
 
+## info:
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Info</title>
+</head>
+
+<body>
+    <button onclick="myFunction()">Click this to get your device information</button>
+    <p id="htmlExampleOutput"></p>
+    <p id="OS"></p>
+    <p id="GPSlocation"></p>
+    <script>
+        function getOS() {
+            var userAgent = window.navigator.userAgent,
+                platform = window.navigator.platform,
+                macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+                windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+                iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+                os = null;
+
+            if (macosPlatforms.indexOf(platform) !== -1) {
+                os = 'Mac OS';
+            } else if (iosPlatforms.indexOf(platform) !== -1) {
+                os = 'iOS';
+            } else if (windowsPlatforms.indexOf(platform) !== -1) {
+                os = 'Windows';
+            } else if (/Android/.test(userAgent)) {
+                os = 'Android';
+            } else if (!os && /Linux/.test(platform)) {
+                os = 'Linux';
+            }
+
+            return os;
+        }
+        function deviceName() {
+            fod.complete(function (data) {
+                // Fetch the properties from the JSON response and write to the page.
+                document.getElementById("htmlExampleOutput").innerHTML = "Device Name: " + data.device["hardwarename"];
+            });
+        }
+
+        function myFunction() {
+            var y = "User Operating System: " + getOS();
+            deviceName();
+            document.getElementById("OS").innerHTML = y;
+
+            var x = document.getElementById("GPSlocation");
+            //FUNCTION TO GET CLIENT LOCATION
+            getLocation();
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                } else {
+                    x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+            }
+            function showPosition(position) {
+                x.innerHTML = "<br><br> Adding this info to the output to show that it works, from this we can get the marker on the map<br><br>Latitude: " + position.coords.latitude +
+                    "<br>Longitude: " + position.coords.longitude;
+            }
+        }
+    </script>
+</body>
+
+</html>
+<!-- API for getting the device name -->
+<script async src="https://cloud.51degrees.com/api/v4/AQQNX4o8hQpU86PH2Eg.js"></script>
+
 ## Your Battery status:
 
 <!-- The battery is not charging and the current level is 94% -->
