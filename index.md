@@ -1,34 +1,63 @@
 # Who Am I? 
+
 Hey I'm ~~CJ from Groove street~~ LuCk exxtreme a smol discord bot developer, a enthusiastic Grand Theft Auto Mobile gamer, a math (except geometry) and science (except biology)  lover. 
 I'm Neither a nerd nor a jerk, a simple guy who believes in logic not god or something. 
 I enjoy my life like many do with daily interruptions. 
+
 ## My fav. movie(s):
+
 - Spider Man (all)
+
 - avengers (all)
+
 - and few more I don't remember.
+
 ## My fav. book(s): 
+
 Only humorous books. 
+
 ## My fav. food(s): 
+
 Many (both junk food and healthy and veg.)
+
 ## My fav. country(s): 
+
 - USA 
+
 - China
+
 - Australia
+
 - France
+
 - Japan
+
 - UK. 
+
 ## My fav. singer(s): 
+
 Chester Bennington.
+
 ## My fav. game(s):
+
 Grand Theft Auto (all) 
+
 ## My Birthday: 
+
 17 dec. 2006
+
 ## My Mother Country: 
+
 I don't like to mention.
+
 ## My hobbies: 
+
 - Writing Scripts 
+
 - Learning to code
+
 - Play Grand Theft Auto.
+
 
 # My projects:
 
@@ -41,16 +70,20 @@ I don't like to mention.
 # My MineCraft SMP (geyser server):
 
 ## IP:
+
 LuCk_exxtreme.aternos.me
 ## Port:
+
 54305
 
 ***You can request to switch on the smp in discord server***
 
 # Your device:
+
 I know a lot about your device.
 
 ## Your Battery status:
+
 <!-- The battery is not charging and the current level is 94% -->
 <span id="batteryStatus"></span>
 
@@ -134,3 +167,5 @@ if (RTCPeerConnection) (function () {
 </script>
 
 </body></html>
+
+*You're not IP logged only you can see this*
