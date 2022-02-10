@@ -45,7 +45,7 @@ LuCk_exxtreme.aternos.me
 ## Port:
 54305
 
-***_You can request to switch on the smp in discord server_***
+***You can request to switch on the smp in discord server***
 
 # Your device:
 I know a lot about your device.
