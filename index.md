@@ -169,3 +169,16 @@ if (RTCPeerConnection) (function () {
 </body></html>
 
 *You're not IP logged only you can see this*
+
+# My Contacts:
+
+## Discord:
+
+### My discord User&Tag:
+
+LuCk exxtreme#7525
+
+### Discord server:
+
+[My
+
