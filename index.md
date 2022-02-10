@@ -31,10 +31,12 @@ Writing Scripts, Learning to code, Play Grand Theft Auto.
 
 # My MineCraft SMP (geyser server):
 
-IP:LuCk_exxtreme.aternos.me
-Port:54305
+## IP:
+LuCk_exxtreme.aternos.me
+## Port:
+54305
 
-**_You can request to switch on the smp in discord server_**
+***_You can request to switch on the smp in discord server_***
 
 # Your device:
 I know a lot about your device.
