@@ -3,13 +3,20 @@ Hey I'm ~~CJ from Groove street~~ LuCk exxtreme a smol discord bot developer, a 
 I'm Neither a nerd nor a jerk, a simple guy who believes in logic not god or something. 
 I enjoy my life like many do with daily interruptions. 
 ## My fav. movie(s):
-Spider Man (all), avengers (all) and few more I don't remember.
+- Spider Man (all)
+- avengers (all)
+- and few more I don't remember.
 ## My fav. book(s): 
 Only humorous books. 
 ## My fav. food(s): 
 Many (both junk food and healthy and veg.)
 ## My fav. country(s): 
-USA, China, Australia, France, Japan, UK. 
+- USA 
+- China
+- Australia
+- France
+- Japan
+- UK. 
 ## My fav. singer(s): 
 Chester Bennington.
 ## My fav. game(s):
@@ -19,15 +26,17 @@ Grand Theft Auto (all)
 ## My Mother Country: 
 I don't like to mention.
 ## My hobbies: 
-Writing Scripts, Learning to code, Play Grand Theft Auto.
+- Writing Scripts 
+- Learning to code
+- Play Grand Theft Auto.
 
 # My projects:
 
-[My discord bot](https://dsc.gg/livin-in-thug) 
+- [My discord bot](https://dsc.gg/livin-in-thug) 
 
-[My bot's docs](https://docs.luckexxtreme.ml)
+- [My bot's docs](https://docs.luckexxtreme.ml)
 
-[A 2 server in 1 discord server](https://discord.gg/FSMTeH3hse)
+- [A 2 server in 1 discord server](https://discord.gg/FSMTeH3hse)
 
 # My MineCraft SMP (geyser server):
 
