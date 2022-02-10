@@ -180,5 +180,4 @@ LuCk exxtreme#7525
 
 ### Discord server:
 
-[My
-
+[![My discord server](https://github.com/LuCk-exxtreme/LuCk/blob/main/.github/assests/Screenshot_2022_0210_114052.png)](https://discord.gg/FSMTeH3hse)
