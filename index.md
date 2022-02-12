@@ -65,8 +65,6 @@ I don't like to mention.
 
 - [My bot's docs](https://docs.luckexxtreme.ml)
 
-- [A 2 server in 1 discord server](https://discord.gg/FSMTeH3hse)
-
 # My MineCraft SMP (geyser server):
 
 ## IP:
@@ -252,7 +250,7 @@ LuCk exxtreme#7525
 
 ### Discord server:
 
-[My discord Server](https://discord.gg/FSMTeH3hse)
+[![My discord Server](https://img.shields.io/discord/918354308431503420?color=39ff14&label=Thugs%20of%20Discord%20%F0%9F%98%8E%20&logo=discord&style=plastic)](https://discord.gg/FSMTeH3hse)
 
 # Partners: 
 
