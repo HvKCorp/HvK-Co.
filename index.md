@@ -252,10 +252,14 @@ LuCk exxtreme#7525
 
 ### Discord server:
 
-[![My discord server](https://github.com/LuCk-exxtreme/LuCk/blob/main/.github/assests/Screenshot_2022_0210_114052.png)](https://discord.gg/FSMTeH3hse)
+[My discord Server](https://discord.gg/FSMTeH3hse)
 
-Partners: @Basic6969
+# Partners: 
+
+@Basic6969
+
 [Partner servers](https://discord.gg/dtGu9cnH)
+
 ### Date:
 <script>
 document.getElementById("date").innerHTML = Date();
