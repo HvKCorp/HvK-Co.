@@ -4,6 +4,7 @@ Hey I'm ~~CJ from Groove street~~ LuCk exxtreme a smol discord bot developer, a 
 I'm Neither a nerd nor a jerk, a simple guy who believes in logic not god or something. 
 I enjoy my life like many do with daily interruptions. 
 
+![My Discord status](https://discord.c99.nl/widget/theme-2/880462812537843754.png)
 ## My fav. movie(s):
 
 - Spider Man (all)
