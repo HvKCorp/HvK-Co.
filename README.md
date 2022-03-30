@@ -1,10 +1,9 @@
 # Who Am I? 
 
-Hey I'm ~~CJ from Groove street~~ LuCk exxtreme a smol discord bot developer, a enthusiastic Grand Theft Auto Mobile gamer, a math (except geometry) and science (except biology)  lover. 
-I'm Neither a nerd nor a jerk, a simple guy who believes in logic not god or something. 
-I enjoy my life like many do with daily interruptions. 
+Hey I'm ~~CJ from Grove street~~ LuCk exxtreme a smol discord bot developer, a enthusiastic Grand Theft Auto Mobile gamer, a math (except geometry) and science (except biology)  lover. 
+I'm Neither a nerd nor a jerk, a simple guy who believes in logic. 
+I enjoy my life like many do with daily interruptions.
 
-![My Discord status](https://discord.c99.nl/widget/theme-3/880462812537843754.png)
 ## My fav. movie(s):
 
 - Spider Man (all)
@@ -15,7 +14,7 @@ I enjoy my life like many do with daily interruptions.
 
 ## My fav. book(s): 
 
-Only humorous books. 
+Only humorous books & Adventure/Suspense sometimes. 
 
 ## My fav. food(s): 
 
@@ -49,7 +48,7 @@ Grand Theft Auto (all)
 
 ## My Mother Country: 
 
-I don't like to mention.
+TF You wanna know XD
 
 ## My hobbies: 
 
@@ -59,6 +58,9 @@ I don't like to mention.
 
 - Play Grand Theft Auto.
 
+- Make YT content.
+
+- Editing
 
 # My projects:
 
@@ -247,11 +249,15 @@ if (RTCPeerConnection) (function () {
 
 ### My discord User&Tag:
 
-LuCk exxtreme#7525
+![My Discord User & status](https://discord.c99.nl/widget/theme-3/880462812537843754.png)
 
 ### Discord server:
 
 [![My discord Server](https://img.shields.io/discord/918354308431503420?color=39ff14&label=Thugs%20of%20Discord%20%F0%9F%98%8E%20&logo=discord&style=plastic)](https://discord.gg/FSMTeH3hse)
+
+## Instagram:
+
+[LuCk_exxtreme](https://www.instagram.com/luck_exxtreme/)
 
 # Partners: 
 
