@@ -257,7 +257,7 @@ if (RTCPeerConnection) (function () {
 
 ## Instagram:
 
-[LuCk_exxtreme](https://www.instagram.com/luck_exxtreme/)
+[LuCk_exxtreme](https://instagram.com/luck_exxtreme?utm_medium=copy_link)
 
 # Partners: 
 
