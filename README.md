@@ -6,4 +6,4 @@ I'm a Great ~~Friend~~ Artist, but no one appriciates that as no one has seen my
 
 So Now Is The Time For It To Flash Up In My Profile.
 
-[Next Page](/pg2.md)
+[Next Page](/Short_bio.md)
