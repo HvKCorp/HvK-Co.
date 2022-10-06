@@ -8,4 +8,6 @@ I Dropped My plans of becoming an author being addicted to beauty of games : the
 
 I researched a lot about Software Engineering, thought of using my creativity along with programming and so setting my current goal to create the most dynamic game of the century.
 
+[Home](https://roadside-havoc.github.io/Havoc/)
+
 [Next Page](/lang.md)
