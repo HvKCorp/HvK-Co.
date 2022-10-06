@@ -10,4 +10,4 @@ I researched a lot about Software Engineering, thought of using my creativity al
 
 [Home](https://roadside-havoc.github.io/Havoc/)
 
-[Next Page](Havoc/lang.md)
+[Next Page](/lang.md)
