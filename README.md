@@ -1,7 +1,7 @@
 # Who Am I? 
 
-Hey I'm ~~CJ from Grove street~~ LuCk exxtreme a smol discord bot developer, a enthusiastic Grand Theft Auto Mobile gamer, a math (except geometry) and science (except biology)  lover. 
-I'm Neither a nerd nor a jerk, a simple guy who believes in logic. 
-I enjoy my life like many do with daily interruptions.
+Hey I'm ~~CJ from Grove street~~ a legendary __***Roadside Havoc***__. 
+I'm a Great ~~Friend~~ Artist, but no one appriciates that as no one has seen my creativity,
+So Now Is The Time For It To Flash Up In My Profile.
 
 [Next Page](/pg2.md)
