@@ -24,6 +24,6 @@
 
 [Home](https://roadside-havoc.github.io/Havoc/)
 
-[Previous Page](Havoc/Short_bio.md)
+[Previous Page](/Short_bio.md)
 
-[Next Page](Havoc/)
+[Next Page](/goals.md)
