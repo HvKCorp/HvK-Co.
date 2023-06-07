@@ -85,3 +85,17 @@ video {
     transform: translateY(0);
   }
 }
+
+/* Mobile Styles */
+@media screen and (max-width: 800px) {
+  .profile-pic {
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .animated-link {
+    font-size: 30px;
+  }
+}
