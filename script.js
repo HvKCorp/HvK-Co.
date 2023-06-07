@@ -1,11 +1,11 @@
 // Preload profile picture and favicon
-var profilePic = document.getElementById('profile-image');
+var profilePic = document.querySelector('.profile-pic img');
 var favicon = document.querySelector("link[rel='shortcut icon']");
 
 var image = new Image();
 image.src = profilePic.src;
 image.onload = function() {
-  profilePic.classList.add('animated-profile');
+  profilePic.parentNode.classList.add('animated-profile');
 };
 
 var faviconImage = new Image();
