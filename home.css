@@ -94,7 +94,7 @@ video {
   }
   
   #site-content {
-  justify-content: left;
+  align-items: flex-start;
   }
   
   .profile-pic {
