@@ -88,6 +88,15 @@ video {
 
 /* Mobile Styles */
 @media screen and (max-width: 800px) {
+ 
+  #video-container video {
+    object-fit: contain;
+  }
+  
+  #site-content {
+  justify-content: left;
+  }
+  
   .profile-pic {
     top: 10px;
     left: 10px;
@@ -96,6 +105,11 @@ video {
   }
 
   .animated-link {
-    font-size: 30px;
+    font-size: 20px;
+  }
+  
+  .profile-pic {
+  width: 10px;
+  height: 10px;
   }
 }
