@@ -1,29 +1,28 @@
-// Preload profile picture and favicon
-var profilePic = document.querySelector('.profile-pic img');
-var favicon = document.querySelector("link[rel='shortcut icon']");
-
-var image = new Image();
-image.src = profilePic.src;
-image.onload = function() {
-  profilePic.parentNode.classList.add('animated-profile');
-};
-
-var faviconImage = new Image();
-faviconImage.src = favicon.href;
-
-// Rest of your JS code
 var video = document.getElementById('video-player');
 var videoContainer = document.getElementById('video-container');
 var siteContent = document.getElementById('site-content');
+var profilePic = document.querySelector('.profile-pic');
+var videoControls = document.getElementById('video-controls');
 
-video.addEventListener('ended', function() {
-  videoContainer.style.opacity = 0;
-  setTimeout(function() {
-    videoContainer.style.display = 'none';
-    siteContent.style.visibility = 'visible';
-    siteContent.style.opacity = 1;
-    animateLinks();
-  }, 1000);
+function requestAutoplayPermission() {
+  video.play().then(function() {
+    video.pause();
+    videoContainer.style.opacity = 0;
+    setTimeout(function() {
+      videoContainer.style.display = 'none';
+      siteContent.style.visibility = 'visible';
+      siteContent.style.opacity = 1;
+      animateLinks();
+      animateProfilePic();
+    }, video.duration * 1000); // Delay based on video duration
+  }).catch(function(error) {
+    console.log('Autoplay permission denied:', error);
+    videoControls.style.display = 'block'; // Show video controls
+  });
+}
+
+video.addEventListener('loadedmetadata', function() {
+  requestAutoplayPermission();
 });
 
 function animateLinks() {
@@ -35,4 +34,8 @@ function animateLinks() {
       }, index * 200);
     })(links[i], i);
   }
+}
+
+function animateProfilePic() {
+  profilePic.classList.add('animated-profile');
 }
