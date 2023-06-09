@@ -6,7 +6,6 @@ var messageContainer = document.getElementById('message-container');
 
 function requestAutoplayPermission() {
   video.play().then(function() {
-    video.pause();
     videoContainer.style.opacity = 0;
     setTimeout(function() {
       videoContainer.style.display = 'none';
@@ -16,8 +15,8 @@ function requestAutoplayPermission() {
       animateProfilePic();
     }, 1000);
   }).catch(function(error) {
-    console.log('Autoplay permission denied:', error);
     messageContainer.style.display = 'block'; // Show the message container
+    video.style.display = 'none'; // Hide the video element
   });
 }
 
