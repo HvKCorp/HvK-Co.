@@ -2,27 +2,16 @@ var video = document.getElementById('video-player');
 var videoContainer = document.getElementById('video-container');
 var siteContent = document.getElementById('site-content');
 var profilePic = document.querySelector('.profile-pic');
-var videoControls = document.getElementById('video-controls');
 
-function requestAutoplayPermission() {
-  video.play().then(function() {
-    video.pause();
-    videoContainer.style.opacity = 0;
-    setTimeout(function() {
-      videoContainer.style.display = 'none';
-      siteContent.style.visibility = 'visible';
-      siteContent.style.opacity = 1;
-      animateLinks();
-      animateProfilePic();
-    }, video.duration * 1000); // Delay based on video duration
-  }).catch(function(error) {
-    console.log('Autoplay permission denied:', error);
-    videoControls.style.display = 'block'; // Show video controls
-  });
-}
-
-video.addEventListener('loadedmetadata', function() {
-  requestAutoplayPermission();
+video.addEventListener('ended', function() {
+  videoContainer.style.opacity = 0;
+  setTimeout(function() {
+    videoContainer.style.display = 'none';
+    siteContent.style.visibility = 'visible';
+    siteContent.style.opacity = 1;
+    animateLinks();
+    animateProfilePic();
+  }, 1000);
 });
 
 function animateLinks() {
