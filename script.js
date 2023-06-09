@@ -9,7 +9,7 @@ function requestAutoplayPermission() {
     setTimeout(function() {
       videoContainer.style.opacity = 0;
       setTimeout(function() {
-        messageContainer.style.display = 'block';
+        messageContainer.style.display = 'none';
         videoContainer.style.display = 'none';
         siteContent.style.visibility = 'visible';
         siteContent.style.opacity = 1;
