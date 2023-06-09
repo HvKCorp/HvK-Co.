@@ -9,6 +9,7 @@ function requestAutoplayPermission() {
     setTimeout(function() {
       videoContainer.style.opacity = 0;
       setTimeout(function() {
+        messageContainer.style.display = 'block';
         videoContainer.style.display = 'none';
         siteContent.style.visibility = 'visible';
         siteContent.style.opacity = 1;
@@ -17,7 +18,6 @@ function requestAutoplayPermission() {
       }, 1000);
     }, video.duration * 1000);
   }).catch(function(error) {
-    console.log('Autoplay permission denied:', error);
     messageContainer.style.display = 'block'; // Show the message container
     video.style.display = 'none'; // Hide the video element
   });
