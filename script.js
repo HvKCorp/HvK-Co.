@@ -2,29 +2,30 @@ var video = document.getElementById('video-player');
 var videoContainer = document.getElementById('video-container');
 var siteContent = document.getElementById('site-content');
 var profilePic = document.querySelector('.profile-pic');
-var messageContainer = document.getElementById('message-container');
-
-function requestAutoplayPermission() {
-  video.play().then(function() {
-    setTimeout(function() {
-      videoContainer.style.opacity = 0;
-      setTimeout(function() {
-        messageContainer.style.display = 'none';
-        videoContainer.style.display = 'none';
-        siteContent.style.visibility = 'visible';
-        siteContent.style.opacity = 1;
-        animateLinks();
-        animateProfilePic();
-      }, 1000);
-    }, video.duration * 1000);
-  }).catch(function(error) {
-    messageContainer.style.display = 'block'; // Show the message container
-    video.style.display = 'none'; // Hide the video element
-  });
-}
 
 video.addEventListener('loadedmetadata', function() {
-  requestAutoplayPermission();
+  if (typeof video.play === 'function') {
+    var playPromise = video.play();
+    if (playPromise !== undefined) {
+      playPromise.then(function() {
+        // Autoplay started successfully
+        video.controls = false; // Hide video controls
+        setTimeout(function() {
+          videoContainer.style.opacity = 0;
+          setTimeout(function() {
+            videoContainer.style.display = 'none';
+            siteContent.style.visibility = 'visible';
+            siteContent.style.opacity = 1;
+            animateLinks();
+            animateProfilePic();
+          }, 1000);
+        }, video.duration * 1000);
+      }).catch(function() {
+        // Autoplay permission denied
+        video.controls = true; // Show video controls
+      });
+    }
+  }
 });
 
 function animateLinks() {
