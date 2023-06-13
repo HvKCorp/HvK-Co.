@@ -18,7 +18,7 @@ video.addEventListener('canplay', function() {
             siteContent.style.opacity = 1;
             animateLinks();
             animateProfilePic();
-          }, 1000);
+          }, video.duration * 1000);
         }, (video.duration * 1000) - 1000);
       }).catch(function() {
         // Autoplay permission denied
@@ -30,7 +30,7 @@ video.addEventListener('canplay', function() {
           siteContent.style.opacity = 1;
           animateLinks();
           animateProfilePic();
-        }, 1000);
+        }, video.duration * 1000);
       });
     }
   }
