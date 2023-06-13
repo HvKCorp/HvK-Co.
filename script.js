@@ -5,31 +5,33 @@ var profilePic = document.querySelector('.profile-pic');
 
 video.addEventListener('canplay', function() {
   if (typeof video.play === 'function') {
-    video.controls = false; // Hide video controls
-    video.play().then(function() {
-      // Autoplay started successfully
-      setTimeout(function() {
-        videoContainer.style.opacity = 0;
+    var playPromise = video.play();
+    if (playPromise !== undefined) {
+      playPromise.then(function() {
+        // Autoplay started successfully
+        video.controls = false; // Hide video controls
+        setTimeout(function() {
+          videoContainer.style.opacity = 0;
+          setTimeout(function() {
+            videoContainer.style.display = 'none';
+            siteContent.style.visibility = 'visible';
+            siteContent.style.opacity = 1;
+            animateLinks();
+            animateProfilePic();
+          }, 1000); // Delay for fade out transition
+        }, video.duration * 1000);
+      }).catch(function() {
+        // Autoplay permission denied
+        video.controls = true; // Show video controls
         setTimeout(function() {
           videoContainer.style.display = 'none';
           siteContent.style.visibility = 'visible';
           siteContent.style.opacity = 1;
           animateLinks();
           animateProfilePic();
-        }, 1000);
-      }, (video.duration * 1000) - 1000);
-    }).catch(function() {
-      // Autoplay permission denied
-      video.controls = true; // Show video controls
-      videoContainer.style.opacity = 0;
-      setTimeout(function() {
-        videoContainer.style.display = 'none';
-        siteContent.style.visibility = 'visible';
-        siteContent.style.opacity = 1;
-        animateLinks();
-        animateProfilePic();
-      }, 1000);
-    });
+        }, 1000); // Delay for fade out transition
+      });
+    }
   }
 });
 
