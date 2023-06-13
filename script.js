@@ -3,7 +3,11 @@ var videoContainer = document.getElementById('video-container');
 var siteContent = document.getElementById('site-content');
 var profilePic = document.querySelector('.profile-pic');
 
-video.addEventListener('ended', function() {
+function showVideoControls() {
+  video.controls = true; // Show video controls
+}
+
+function hideVideoContainer() {
   videoContainer.style.opacity = 0;
   setTimeout(function() {
     videoContainer.style.display = 'none';
@@ -12,6 +16,23 @@ video.addEventListener('ended', function() {
     animateLinks();
     animateProfilePic();
   }, 1000);
+}
+
+video.addEventListener('canplay', function() {
+  if (typeof video.play === 'function') {
+    var playPromise = video.play();
+    if (playPromise !== undefined) {
+      playPromise.then(function() {
+        // Autoplay started successfully
+        video.controls = false; // Hide video controls
+        setTimeout(hideVideoContainer, (video.duration * 1000) - 1000);
+      }).catch(function() {
+        // Autoplay permission denied
+        showVideoControls();
+        hideVideoContainer();
+      });
+    }
+  }
 });
 
 function animateLinks() {
