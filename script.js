@@ -12,17 +12,22 @@ video.addEventListener('loadedmetadata', function() {
         video.controls = false; // Hide video controls
         setTimeout(function() {
           videoContainer.style.opacity = 0;
-          setTimeout(function() {
-            videoContainer.style.display = 'none';
-            siteContent.style.visibility = 'visible';
-            siteContent.style.opacity = 1;
-            animateLinks();
-            animateProfilePic();
-          }, 1000);
-        }, video.duration * 1000);
+        }, (video.duration * 1000) - 1000);
       }).catch(function() {
         // Autoplay permission denied
         video.controls = true; // Show video controls
+        siteContent.style.visibility = 'visible';
+        siteContent.style.opacity = 1;
+        animateLinks();
+        animateProfilePic();
+      }).finally(function() {
+        setTimeout(function() {
+          videoContainer.style.display = 'none';
+          siteContent.style.visibility = 'visible';
+          siteContent.style.opacity = 1;
+          animateLinks();
+          animateProfilePic();
+        }, video.duration * 1000);
       });
     }
   }
