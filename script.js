@@ -3,36 +3,15 @@ var videoContainer = document.getElementById('video-container');
 var siteContent = document.getElementById('site-content');
 var profilePic = document.querySelector('.profile-pic');
 
-video.addEventListener('canplay', function() {
-  if (typeof video.play === 'function') {
-    var playPromise = video.play();
-    if (playPromise !== undefined) {
-      playPromise.then(function() {
-        // Autoplay started successfully
-        video.controls = false; // Hide video controls
-        setTimeout(function() {
-          videoContainer.style.opacity = 0;
-          setTimeout(function() {
-            videoContainer.style.display = 'none';
-            siteContent.style.visibility = 'visible';
-            siteContent.style.opacity = 1;
-            animateLinks();
-            animateProfilePic();
-          }, 1000); // Delay for fade out transition
-        }, video.duration * 1000);
-      }).catch(function() {
-        // Autoplay permission denied
-        video.controls = true; // Show video controls
-        setTimeout(function() {
-          videoContainer.style.display = 'none';
-          siteContent.style.visibility = 'visible';
-          siteContent.style.opacity = 1;
-          animateLinks();
-          animateProfilePic();
-        }, 1000); // Delay for fade out transition
-      });
-    }
-  }
+video.addEventListener('ended', function() {
+  videoContainer.style.opacity = 0;
+  setTimeout(function() {
+    videoContainer.style.display = 'none';
+    siteContent.style.visibility = 'visible';
+    siteContent.style.opacity = 1;
+    animateLinks();
+    animateProfilePic();
+  }, 1000);
 });
 
 function animateLinks() {
