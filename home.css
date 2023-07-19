@@ -27,16 +27,17 @@ video {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: bold;
-  color: #ffffff;
   text-align: center;
 }
 
 h1 {
   font-size: 36px;
+  color: red;
 }
 
 h2 {
   font-size: 30px;
+  color: darkred;
 }
 
 h3 {
@@ -57,10 +58,10 @@ h6 {
 
 /* Paragraphs */
 p {
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #ffffff;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 32px;
+    line-height: 1.5;
+    color: darkorange;
 }
 
 /* Example styles for specific paragraphs */
@@ -169,5 +170,9 @@ p {
   .profile-pic {
   width: 10px;
   height: 10px;
+  }
+
+  p {
+    font-size: 27px
   }
 }
