@@ -21,7 +21,7 @@ var messages = [
 var questionInput = document.getElementById('question-input');
 var messageElement = document.querySelector('.message');
 var shakeButton = document.querySelector('.shake-button');
-var magic8Ball = document.querySelector('.magic8ball');
+var magic8BallContainer = document.querySelector('.magic8ball-container');
 
 function getRandomMessage() {
   var randomIndex = Math.floor(Math.random() * messages.length);
@@ -33,9 +33,9 @@ function shakeMagic8Ball() {
   if (question !== '') {
     var message = getRandomMessage();
     messageElement.textContent = message;
-    magic8Ball.classList.add('hidden');
+    magic8BallContainer.style.visibility = 'hidden';
     setTimeout(function() {
-      magic8Ball.classList.remove('hidden');
+      magic8BallContainer.style.visibility = 'visible';
     }, 500);
   } else {
     messageElement.textContent = 'Please enter a question.';
