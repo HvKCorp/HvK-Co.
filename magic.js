@@ -18,8 +18,9 @@ var messages = [
   "Very doubtful."
 ];
 
-var messageElement = document.querySelector(".message");
-var shakeButton = document.querySelector(".shake-button");
+var questionInput = document.getElementById('question-input');
+var messageElement = document.querySelector('.message');
+var shakeButton = document.querySelector('.shake-button');
 
 function getRandomMessage() {
   var randomIndex = Math.floor(Math.random() * messages.length);
@@ -27,8 +28,13 @@ function getRandomMessage() {
 }
 
 function shakeMagic8Ball() {
-  var message = getRandomMessage();
-  messageElement.textContent = message;
+  var question = questionInput.value.trim();
+  if (question !== '') {
+    var message = getRandomMessage();
+    messageElement.textContent = message;
+  } else {
+    messageElement.textContent = 'Please enter a question.';
+  }
 }
 
-shakeButton.addEventListener("click", shakeMagic8Ball);
+shakeButton.addEventListener('click', shakeMagic8Ball);
