@@ -26,7 +26,7 @@ input[type="text"] {
   font-size: 16px;
 }
 
-.magic8ball-container {
+.magic8ball {
   width: 400px;
   height: 400px;
   margin: 0 auto;
@@ -40,14 +40,7 @@ input[type="text"] {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.hidden {
-  display: none;
-}
+  }
 
 .message {
   font-size: 18px;
