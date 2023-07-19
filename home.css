@@ -64,6 +64,10 @@ p {
     color: darkorange;
 }
 
+a {
+  font-size: xxx-large;
+  color: darkorange;
+}
 /* Example styles for specific paragraphs */
 .intro-paragraph {
   font-size: 20px;
