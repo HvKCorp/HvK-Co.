@@ -64,7 +64,7 @@ p {
     color: darkorange;
 }
 
-a {
+a:link {
   font-size: xxx-large;
   color: darkorange;
 }
